@@ -5,13 +5,13 @@ import {
   deletePost,
   likeUnlikePost,
   replyToPost,
-  getFeedPost,
+  getFeedPosts,
 } from "../controllers/postController.js";
 import protectRoute from "../middlewares/protectRoute.js";
 
 const router = expres.Router();
 
-router.get("/feed", getFeedPost);
+router.get("/feed", protectRoute, getFeedPosts);
 router.get("/:id", getPost);
 router.post("/create", protectRoute, createPost);
 router.delete("/:id", protectRoute, deletePost);
