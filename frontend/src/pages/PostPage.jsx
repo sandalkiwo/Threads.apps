@@ -34,7 +34,7 @@ const PostPage = () => {
           <BsThreeDots />
         </Flex>
       </Flex>
-      <Text my={3}>Let's talk about Threads.</Text>
+      <Text my={3}>Let&apos;s talk about Threads.</Text>
       <Box
         borderRadius={6}
         overflow={"hidden"}
